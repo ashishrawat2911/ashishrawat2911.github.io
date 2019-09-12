@@ -20,19 +20,19 @@
         <div class="nav-tabs">
             <ul class="nav-links">
                 <li class="nav-link">
-                    <a href="#">About</a>
+                    <a data-scroll href="#about">About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Blogs</a>
+                    <a data-scroll href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Projects</a>
+                    <a href="https://github.com/ashishrawat2911?tab=repositories">Projects</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Talks</a>
+                    <a data-scroll href="#talks">Talks</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Resume</a>
+                    <a href="https://drive.google.com/file/d/1VVKB_JNOvZQw9kSKm5YvBZXuPO0Iyyq_/view">Resume</a>
                 </li>
             </ul>
         </div>
@@ -42,6 +42,8 @@
         </div>
     </nav>
 
+    <!-- FOR MOBILE AND TABLETS -->
+
     <div class="nav-menu">
         <div class="nav-menu-cross">
             <img src="images/favicons/delete_sign_50px.png" id="cross">
@@ -49,19 +51,19 @@
         <div class="nav-menu-content">
             <ul class="nav-menu-list">
                 <li class="nav-menu-item">
-                    <a href="#">About</a>
+                    <a onclick="toggleNavView('none')" data-scroll href="#about">About</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Blogs</a>
+                    <a onclick="toggleNavView('none')" data-scroll href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Projects</a>
+                    <a onclick="toggleNavView('none')" href="https://github.com/ashishrawat2911?tab=repositories">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Talks</a>
+                    <a onclick="toggleNavView('none')" data-scroll href="#talks">Talks</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Resume</a>
+                    <a onclick="toggleNavView('none')" href="https://drive.google.com/file/d/1VVKB_JNOvZQw9kSKm5YvBZXuPO0Iyyq_/view">Resume</a>
                 </li>
             </ul>
         </div>
@@ -122,7 +124,7 @@
         <div class="header-bg-secondary"></div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-plane">
             <img src="images/bgs/bg1.png">
         </div>
@@ -224,7 +226,7 @@
 
     <section class="blogs">
         <div class="blogs-primary">
-            <h3 class="blogs-heading text-center">TECHNICAL BLOGS</h3>
+            <h3 class="blogs-heading text-center" id="blogs">TECHNICAL BLOGS</h3>
 
             <!-- FOR DESKTOP -->
             <div class="row blogs-desktop">
@@ -299,7 +301,7 @@
         </div>
     </section>
 
-    <section class="talks">
+    <section class="talks" id="talks">
         <div class="row">
             <div class="col-2-of-5">
                 <h3 class="talks-heading">TALKS</h3>
@@ -343,13 +345,14 @@
 
         <div class="buttons padding-top-large">
             <div class="button">
-                <a href="#">Resume</a>
+                <a href="#">RESUME</a>
             </div>
         </div>
 
         <p class="footer-small">Ashish Rawat | &copy; 2019</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -372,6 +375,10 @@
                 centerMode: true,
                 centerPadding: '60px'
             });
+        });
+
+        var scroll = new SmoothScroll('a[data-scroll]', {
+            speed: 600
         });
     </script>
 </body>
