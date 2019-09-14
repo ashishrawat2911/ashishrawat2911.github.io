@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap" rel="stylesheet">
     <title>Ashish Rawat</title>
 </head>
 
@@ -19,19 +18,19 @@
         <div class="nav-tabs">
             <ul class="nav-links">
                 <li class="nav-link">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Blogs</a>
+                    <a href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Projects</a>
+                    <a href="https://github.com/ashishrawat2911?tab=repositories">Projects</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Talks</a>
+                    <a href="#talks">Talks</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#">Resume</a>
+                    <a href="https://drive.google.com/file/d/1VVKB_JNOvZQw9kSKm5YvBZXuPO0Iyyq_/view">Resume</a>
                 </li>
             </ul>
         </div>
@@ -48,26 +47,26 @@
         <div class="nav-menu-content">
             <ul class="nav-menu-list">
                 <li class="nav-menu-item">
-                    <a href="#">About</a>
+                    <a onclick="toggleNavView('none')" href="#about">About</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Blogs</a>
+                    <a onclick="toggleNavView('none')" href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Projects</a>
+                    <a onclick="toggleNavView('none')" href="https://github.com/ashishrawat2911?tab=repositories">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Talks</a>
+                    <a onclick="toggleNavView('none')" href="#talks">Talks</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Resume</a>
+                    <a onclick="toggleNavView('none')" href="https://drive.google.com/file/d/1VVKB_JNOvZQw9kSKm5YvBZXuPO0Iyyq_/view">Resume</a>
                 </li>
             </ul>
         </div>
     </div>
 
     <section class="header">
-        <div class="header-primary-bg-wrap">
+        <div class="header-bg-primary-wrap">
             <div class="header-bg-primary">
                 <div class="row">
                     <div class="col-2-of-6 header-v-align">
@@ -121,7 +120,7 @@
         <div class="header-bg-secondary"></div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-plane">
             <img src="images/bgs/bg1.png">
         </div>
@@ -136,6 +135,7 @@
             </div>
         </div>
     </section>
+
 
     <div class="timeline">
         <div class="timeline-bg-secondary"></div>
@@ -223,9 +223,8 @@
 
     <section class="blogs">
         <div class="blogs-primary">
-            <h3 class="blogs-heading text-center">TECHNICAL BLOGS</h3>
+            <h3 class="blogs-heading text-center" id="blogs">TECHNICAL BLOGS</h3>
 
-            <!-- FOR DESKTOP -->
             <div class="row blogs-desktop">
                 <div class="col-3-of-5">
                     <div class="big-blog">
@@ -256,9 +255,8 @@
                 </div>
             </div>
 
-            <!-- FOR MOBILE AND TABLET -->
             <div class="blogs-carousel-wrapper">
-                <div class="blogs-carousel">
+                <div class="siema blogs-carousel">
                     <div class="blog-panel">
                         <a href="#">
                             <img src="images/blog1.gif">
@@ -288,6 +286,15 @@
                     </div>
                 </div>
 
+                <div class="blogs-carousel-action-btn">
+                    <div class="blogs-carousel-action-btn-left">
+                        <img src="images/favicons/left_50px.png">
+                    </div>
+                    <div class="blogs-carousel-action-btn-right">
+                        <img src="images/favicons/right_50px.png">
+                    </div>
+                </div>
+
                 <div class="buttons blog-button">
                     <div class="button">
                         <p>READ MORE</p>
@@ -298,7 +305,7 @@
         </div>
     </section>
 
-    <section class="talks">
+    <section class="talks" id="talks">
         <div class="row">
             <div class="col-2-of-5">
                 <h3 class="talks-heading">TALKS</h3>
@@ -342,15 +349,15 @@
 
         <div class="buttons padding-top-large">
             <div class="button">
-                <a href="#">Resume</a>
+                <a href="#">RESUME</a>
             </div>
         </div>
 
         <p class="footer-small">Ashish Rawat | &copy; 2019</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/bundle.min.js"></script>
+    <script src="js/index.js"></script>
 
     <script>
         document.querySelector("#burger").addEventListener("click", () => toggleNavView("block"))
@@ -360,18 +367,18 @@
             document.querySelector(".nav-menu").style.display = state
         }
 
-        $(document).ready(function() {
-            $('.blogs-carousel').slick({
-                accessibility: true,
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                arrows: false,
-                slideToShow: 3,
-                centerMode: true,
-                centerPadding: '60px'
-            });
+        const blogs_carousel = new Siema({
+            loop: true
+        })
+
+        document.querySelector('.blogs-carousel-action-btn-left').addEventListener('click', () => blogs_carousel.prev());
+        document.querySelector('.blogs-carousel-action-btn-right').addEventListener('click', () => blogs_carousel.next());
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 600
         });
+
+        ScrollOut()
     </script>
 </body>
 
