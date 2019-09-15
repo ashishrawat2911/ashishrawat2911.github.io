@@ -3,7 +3,7 @@
 
 <head>
     <style>
-         .loader-background {
+        .loader-background {
             width: 100vw;
             height: 100vh;
             background-color: #1A535C;
@@ -88,6 +88,13 @@
     <script type="text/javascript">
         window.addEventListener('load', () => {
             document.querySelector(".loader-background").style.display = "none";
+
+            const elems = [".header-primary", ".header-social-media", ".header-profile-pic-img", ".header-secondary", ".header-buttons"];
+
+            elems.forEach(elem => {
+                console.log(elem)
+                document.querySelector(elem).setAttribute("animate", "")
+            });
         });
     </script>
 </head>
@@ -103,7 +110,7 @@
         <p class="loader-heading">LOADING</p>
     </div>
 
-    <nav class="nav" data-scroll>
+    <nav class="nav">
         <div class="nav-logo">
             <img src="images/logo/LOGO.png">
         </div>
@@ -195,7 +202,7 @@
                                 </ul>
                             </div>
 
-                            <div class="buttons padding-top-medium">
+                            <div class="buttons header-buttons padding-top-medium">
                                 <div class="button">
                                     <p>ABOUT</p>
                                 </div>
