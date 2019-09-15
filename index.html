@@ -86,7 +86,7 @@
     <title>Ashish Rawat</title>
 
     <script type="text/javascript">
-        window.addEventListener('load', () => {
+        window.onload = () => {
             setTimeout(() => {
                 console.log("Enter")
                 document.querySelector(".loader-background").style.display = "none";
@@ -97,8 +97,7 @@
                     document.querySelector(elem).setAttribute("animate", "")
                 });
             }, 500)
-
-        });
+        }
     </script>
 </head>
 
