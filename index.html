@@ -2,16 +2,98 @@
 <html lang="en">
 
 <head>
+    <style>
+        .loader-background {
+            width: 100vw;
+            height: 100vh;
+            background-color: #1A535C;
+            position: fixed;
+            z-index: 999;
+        }
+        
+        .loader-heading {
+            position: relative;
+            top: 200px;
+            left: -80px;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        
+        .loader-background-content {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .lds-ripple {
+            display: inline-block;
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .lds-ripple div {
+            position: absolute;
+            border: 10px solid #fff;
+            opacity: 1;
+            border-radius: 50%;
+            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        
+        .lds-ripple div:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+        
+        @keyframes lds-ripple {
+            0% {
+                top: 69px;
+                left: 69px;
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+            100% {
+                top: -1px;
+                left: -1px;
+                width: 148px;
+                height: 148px;
+                opacity: 0;
+            }
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap" rel="stylesheet">
     <title>Ashish Rawat</title>
+
+    <script type="text/javascript">
+        window.addEventListener('load', () => {
+            document.querySelector(".loader-background").style.display = "none";
+        });
+    </script>
 </head>
 
 <body>
-    <nav class="nav">
+    <div class="loader-background">
+        <div class="loader-background-content">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+                <p class="loader-heading">LOADING</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav" data-scroll>
         <div class="nav-logo">
             <img src="images/logo/LOGO.png">
         </div>
@@ -70,14 +152,14 @@
             <div class="header-bg-primary">
                 <div class="row">
                     <div class="col-2-of-6 header-v-align">
-                        <figure class="header-profile-pic">
+                        <figure class="header-profile-pic" data-scroll>
                             <img src="images/profile-pic.jpg" class="header-profile-pic-img" alt="Profile Image">
                         </figure>
                     </div>
 
                     <div class="col-4-of-6 header-v-align">
                         <div>
-                            <p class="header-primary">Ashish Rawat</p>
+                            <p class="header-primary" data-splitting="lines">Ashish Rawat</p>
 
                             <p class="header-secondary">
                                 Open Source Contributor, Flutter and Android Developer, Technical Blogger, Speaker, Photograper and a life-long learner
@@ -308,7 +390,7 @@
     <section class="talks" id="talks">
         <div class="row">
             <div class="col-2-of-5">
-                <h3 class="talks-heading">TALKS</h3>
+                <h3 class="talks-heading" data-scroll>TALKS</h3>
 
                 <br><br>
 
@@ -378,7 +460,11 @@
             speed: 600
         });
 
-        ScrollOut()
+        ScrollOut({
+            threshold: .2,
+            once: true
+        })
+        Splitting()
     </script>
 </body>
 
