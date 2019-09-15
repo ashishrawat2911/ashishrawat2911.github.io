@@ -3,7 +3,7 @@
 
 <head>
     <style>
-        .loader-background {
+         .loader-background {
             width: 100vw;
             height: 100vh;
             background-color: #1A535C;
@@ -12,14 +12,24 @@
         }
         
         .loader-heading {
-            position: relative;
-            top: 200px;
-            left: -80px;
-            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10rem;
             font-weight: 900;
             letter-spacing: 10px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: white;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .loader-heading {
+                font-size: 4rem;
+                font-weight: 500;
+                letter-spacing: 5px;
+            }
         }
         
         .loader-background-content {
@@ -88,9 +98,9 @@
             <div class="lds-ripple">
                 <div></div>
                 <div></div>
-                <p class="loader-heading">LOADING</p>
             </div>
         </div>
+        <p class="loader-heading">LOADING</p>
     </div>
 
     <nav class="nav" data-scroll>
