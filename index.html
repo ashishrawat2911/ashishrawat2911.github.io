@@ -87,8 +87,17 @@
 
     <script type="text/javascript">
         window.addEventListener('load', () => {
-            console.log("Enter")
-            document.querySelector(".loader-background").style.display = "none";
+            setTimeout(() => {
+                console.log("Enter")
+                document.querySelector(".loader-background").style.display = "none";
+
+                const elems = [".header-primary", ".header-social-media", ".header-profile-pic-img", ".header-secondary", ".header-buttons"];
+
+                elems.forEach(elem => {
+                    document.querySelector(elem).setAttribute("animate", "")
+                });
+            }, 500)
+
         });
     </script>
 </head>
@@ -476,13 +485,6 @@
             once: true
         })
         Splitting()
-
-
-        const elems = [".header-primary", ".header-social-media", ".header-profile-pic-img", ".header-secondary", ".header-buttons"];
-
-        elems.forEach(elem => {
-            document.querySelector(elem).setAttribute("animate", "")
-        });
     </script>
 </body>
 
