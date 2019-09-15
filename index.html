@@ -2,116 +2,15 @@
 <html lang="en">
 
 <head>
-    <style>
-        .loader-background {
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(26, 83, 92, 0.144);;
-            position: fixed;
-            z-index: 999;
-        }
-        
-        .loader-heading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 10rem;
-            font-weight: 900;
-            letter-spacing: 10px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: white;
-            text-align: center;
-        }
-        
-        @media only screen and (max-width: 600px) {
-            .loader-heading {
-                font-size: 4rem;
-                font-weight: 500;
-                letter-spacing: 5px;
-            }
-        }
-        
-        .loader-background-content {
-            height: 150px;
-            width: 150px;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .lds-ripple {
-            display: inline-block;
-            position: relative;
-            width: 150px;
-            height: 150px;
-        }
-        
-        .lds-ripple div {
-            position: absolute;
-            border: 10px solid #fff;
-            opacity: 1;
-            border-radius: 50%;
-            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-        }
-        
-        .lds-ripple div:nth-child(2) {
-            animation-delay: -0.5s;
-        }
-        
-        @keyframes lds-ripple {
-            0% {
-                top: 69px;
-                left: 69px;
-                width: 0;
-                height: 0;
-                opacity: 1;
-            }
-            100% {
-                top: -1px;
-                left: -1px;
-                width: 148px;
-                height: 148px;
-                opacity: 0;
-            }
-        }
-    </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap" rel="stylesheet">
     <title>Ashish Rawat</title>
-
-    <script type="text/javascript">
-        window.onload = () => {
-            setTimeout(() => {
-                console.log("Enter")
-                document.querySelector(".loader-background").style.display = "none";
-
-                const elems = [".header-primary", ".header-social-media", ".header-profile-pic-img", ".header-secondary", ".header-buttons"];
-
-                elems.forEach(elem => {
-                    document.querySelector(elem).setAttribute("animate", "")
-                });
-            }, 500)
-        }
-    </script>
 </head>
 
 <body>
-    <div class="loader-background">
-        <div class="loader-background-content">
-            <div class="lds-ripple">
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <p class="loader-heading">LOADING</p>
-    </div>
-
     <nav class="nav">
         <div class="nav-logo">
             <img src="images/logo/LOGO.png">
