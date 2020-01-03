@@ -1,0 +1,91 @@
+{
+  "info": {
+    "profile_picture": "",
+    "name": "",
+    "short_bio": "",
+    "resume": "",
+    "social_profiles": {
+      "github": "",
+      "facebook": "",
+      "medium": "",
+      "linkedin": "",
+      "twitter": "",
+      "instagram": ""
+    }
+  },
+  "timeline": [
+    {
+      "title": "",
+      "description": "",
+      "organisation": "",
+      "duration": ""
+    },
+    {
+      "title": "",
+      "description": "",
+      "organisation": "",
+      "duration": ""
+    }
+  ],
+  "about": "",
+  "articles": [
+    {
+      "name": "",
+      "banner_image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "banner_image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "banner_image": "",
+      "link": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ],
+  "talks": [
+    {
+      "talk_name": "",
+      "talk_images": [
+        "",
+        ""
+      ],
+      "talk_description": ""
+    },
+    {
+      "talk_name": "",
+      "talk_images": [
+        "",
+        ""
+      ],
+      "talk_description": ""
+    },
+    {
+      "talk_name": "",
+      "talk_images": [
+        "",
+        ""
+      ],
+      "talk_description": ""
+    }
+  ]
+}
