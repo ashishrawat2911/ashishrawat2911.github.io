@@ -15,15 +15,15 @@
   },
   "timeline": [
     {
-      "job_title": "",
-      "job_description": "",
-      "company": "",
+      "title": "",
+      "description": "",
+      "organisation": "",
       "duration": ""
     },
     {
-      "job_title": "",
-      "job_description": "",
-      "company": "",
+      "title": "",
+      "description": "",
+      "organisation": "",
       "duration": ""
     }
   ],
