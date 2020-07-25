@@ -45327,7 +45327,7 @@ ok:function(a){return this.RW(a)},
 RW:function(a){var s=0,r=P.ak(t.pK),q,p,o
 var $async$ok=P.ad(function(b,c){if(b===1)return P.ah(c,r)
 while(true)switch(s){case 0:s=3
-return P.az(G.aec("https://raw.githubusercontent.com/ashishrawat2911/WebT/master/assets/assets/data.json"),$async$ok)
+return P.az(G.aec("https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/data.json"),$async$ok)
 case 3:p=c
 o=C.bx.di(0,B.ae4(U.ac7(p.e).c.a.i(0,"charset")).di(0,p.x))
 P.j5(J.bq(J.bq(o,"info"),"profile_picture"))
