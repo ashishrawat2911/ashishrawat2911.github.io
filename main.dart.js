@@ -45506,7 +45506,7 @@ D.xz.prototype={
 ix:function(a){var s,r=P.bK(),q=a.a
 r.aS(0,q,0)
 s=a.b
-r.aS(0,q,s*0.7)
+r.aS(0,q,s-200)
 r.aS(0,0,s)
 r.ci(0)
 return r},
