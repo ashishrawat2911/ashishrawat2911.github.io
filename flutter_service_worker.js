@@ -5,13 +5,13 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "index.html": "3cf769cc331f227941cdc3c6eb30088a",
 "/": "3cf769cc331f227941cdc3c6eb30088a",
-"main.dart.js": "cce5890d1d753f25a54870da588bc8da",
+"main.dart.js": "80bfc1f7a341c53bdcf6e94aee406aae",
 "manifest.json": "686a3881bf9de2ef83c9edf8cd915e8c",
 "assets/AssetManifest.json": "315256d2656e526d82c5f1c10b78043a",
-"assets/NOTICES": "fe82edff247c4291a35686fbf9bbf420",
-"assets/FontManifest.json": "97a31e6ff78465ce674d1298d5885321",
+"assets/NOTICES": "3c857d3584c136c889d967466e2b6a33",
+"assets/FontManifest.json": "00fcf73fef658266d02dce925be872ed",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/assets/fonts/poppins/Poppins-Medium.otf": "f88c443f02135a3ba091560e76ed767f",
 "assets/assets/fonts/poppins/Poppins-SemiBold.otf": "b0b3d360d13a9649222edd1d844dfc9c",
 "assets/assets/fonts/poppins/Poppins-Bold.otf": "e47421f9b8cec2661620743c53475c8d",
@@ -33,8 +33,8 @@ const CORE = [
 self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a no-cache param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'no-cache'})));
+      // Provide a 'reload' param to ensure the latest version is downloaded.
+      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -117,7 +117,7 @@ self.addEventListener("fetch", (event) => {
         // Either respond with the cached resource, or perform a fetch and
         // lazily populate the cache. Ensure the resources are not cached
         // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'no-cache'});
+        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
         return response || fetch(modifiedRequest).then((response) => {
           cache.put(event.request, response.clone());
           return response;
