@@ -33,6 +33,12 @@
     ]
   },
   "profile_timeline": [
+      {
+      "title": "Freelance Flutter Developer",
+      "description": "asdas",
+      "organisation": "Freelance",
+      "duration": "2019-2020"
+    },
     {
       "title": "Flutter Developer",
       "description": "asdas",
