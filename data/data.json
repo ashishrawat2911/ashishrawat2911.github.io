@@ -33,11 +33,17 @@
     ]
   },
   "profile_timeline": [
-      {
-      "title": "Freelance Flutter Developer",
+     {
+      "title": "Flutter Developer",
       "description": "asdas",
-      "organisation": "Freelance",
-      "duration": "2020-present"
+      "organisation": "Publicis Sapient",
+      "duration": "2021-present"
+    },
+      {
+      "title": "Flutter Developer",
+      "description": "asdas",
+      "organisation": "Codejek Technologies",
+      "duration": "2020-2021"
     },
     {
       "title": "Flutter Developer",
