@@ -33,7 +33,12 @@
     ]
   },
   "profile_timeline": [
-   
+     {
+      "title": "Flutter Developer",
+      "description": "asdas",
+      "organisation": "Publicis Sapient",
+      "duration": "2021-present"
+    },
       {
       "title": "Flutter Developer",
       "description": "asdas",
