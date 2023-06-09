@@ -145,6 +145,11 @@
       "name": "HTML",
       "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/icons/html.png",
       "link": ""
+    },
+    {
+      "name": "Node Js",
+      "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/icons/nodejs.png",
+      "link": ""
     }
   ],
   "talks": [
