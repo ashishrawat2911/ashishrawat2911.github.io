@@ -8,38 +8,38 @@
       {
         "name": "Twitter",
         "link": "https://twitter.com/ashishrawat2911/",
-        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/twitter_26px.png"
+        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/twitter.png"
       },
       {
         "name": "Github",
         "link": "https://github.com/ashishrawat2911/",
-        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/github_32px.png"
+        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/github.png"
       },
       {
         "name": "Instagram",
         "link": "https://instagram.com/ashishrawat2911/",
-        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/instagram_new_24px.png"
+        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/instagram.png"
       },
       {
         "name": "LinkedIn",
         "link": "https://linkedin.com/in/ashishrawat2911/",
-        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/linkedin_26px.png"
+        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/linkedin.png"
       },
       {
         "name": "Medium",
         "link": "https://medium.com/@ashishrawat2911/",
-        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/medium_monogram_30px.png"
+        "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/favicons/medium.png"
       }
     ]
   },
   "profile_timeline": [
-     {
+    {
       "title": "Flutter Developer",
       "description": "asdas",
       "organisation": "Publicis Sapient",
       "duration": "2021-present"
     },
-      {
+    {
       "title": "Flutter Developer",
       "description": "asdas",
       "organisation": "Codejek Technologies",
@@ -126,7 +126,6 @@
       "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/icons/java.png",
       "link": ""
     },
-
     {
       "name": "C++",
       "image": "https://raw.githubusercontent.com/ashishrawat2911/WebT/master/data/icons/cplusplus.png",
